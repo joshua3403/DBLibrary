@@ -18,6 +18,12 @@ private:
 private:
 	BOOL Initial();
 
+	void GetColumnName(const char* tableName, std::list<WCHAR*>* list, std::stack<int>* stack);
+
+	void PrintColumnName(const char* tableName);
+
+	void PrintSelectAll(std::list<WCHAR*>* list, int row, int column);
+
 public:
 	DBLibaray()
 	{
@@ -42,12 +48,17 @@ public:
 		mysql_close(m_Con);
 	}
 
+	BOOL MySQLSendQuery(char* query);
 
-	void MySQLSelectAll(const WCHAR* tableName, int* row, int* column, std::list<WCHAR*>* list);
 
-	void PrintColumnName(const char* tableName);
 
-	void PrintSelectAll(std::list<WCHAR*>* list, int row, int column);
+	BOOL SelectAllQuery(const WCHAR* tableName, int* row, int* column, std::list<WCHAR*>* list);
+
+	// Insert, delete용
+	BOOL InsertQuery(const WCHAR* tableName, const WCHAR* szStringFormat,...);
+
+	// 테이블과 조건
+	BOOL DeleteQuery(const WCHAR* tableName, const WCHAR* szStringFormat, ...);
 };
 
 

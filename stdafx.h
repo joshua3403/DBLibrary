@@ -13,4 +13,5 @@
 #include <tchar.h>
 #include <mysql.h>
 #include <vector>
+#include <stack>
 #include "mysql/include/errmsg.h"

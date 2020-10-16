@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\C++\DBTest\mysql\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\C++\DBTest\mysql\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\C++\DBTest\mysql\include;C:\Users\user\Documents\DBLibrary\mysql\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\C++\DBTest\mysql\lib;C:\Users\user\Documents\DBLibrary\mysql\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -82,8 +82,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>E:\C++\DBTest\mysql\include;$(IncludePath)</IncludePath>
-    <LibraryPath>E:\C++\DBTest\mysql\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\C++\DBTest\mysql\include;C:\Users\user\Documents\DBLibrary\mysql\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\C++\DBTest\mysql\lib;C:\Users\user\Documents\DBLibrary\mysql\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
